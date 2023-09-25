@@ -2,6 +2,11 @@
 
 ## Quick start
 
+### Run rabbitMQ in docker
+```sh
+docker run -d --hostname rmq --name rabbit-server -p 8080:15672 -p 5672:5672 rabbitmq
+```
+
 ### Run server
 ```sh
 make run
