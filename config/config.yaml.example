@@ -1,0 +1,18 @@
+Smtp:
+  From: testmail@gmail.com
+  # using for mailtrap
+  Host: sandbox.smtp.mailtrap.io
+  Port: 2525
+  User: mailtrapUser 
+  Password: mailtrapPassword
+
+rabbitmq:
+  Host: localhost
+  Port: 5672
+  User: guest
+  Password: guest
+  Exchange: emails-exchange
+  Queue: emails-queue
+  RoutingKey: emails-routing-key
+  ConsumerTag: emails-consumer
+  WorkerPoolSize: 24
